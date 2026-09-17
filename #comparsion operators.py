@@ -165,3 +165,67 @@ print(subjects)
 # sets do not allow duplicate values 
 numbers={1,2,3,2,3,4}
 print(numbers)
+
+#dictionaries in python
+#Dictionary is a collection of keyvalue pairs that is unorderd and mutable
+student={
+"name":"Bhargavi",
+"age":00,
+"course":"python"
+}
+
+print(student)
+
+
+#access elements in dic
+print(student["name"])
+print(student["age"])
+print(student["course"])
+
+#change values in dictionary
+student["age"]=11
+print(student["age"])
+
+#add a new data to a dictionary
+student["city"] ="vijawada"
+print(student)
+
+#remove data 
+student.pop("city")
+print(student)
+
+#get ()returns the values of the specified key
+print(student.get("name"))
+
+#update () updates the values of the specified key
+student.update({"age":22})
+print(student)
+
+#popitem () removes the  last inserted keyvalue pair 
+student={
+"name":"Bhargavi",
+"age":21,
+"course":"python"
+}
+
+student.popitem()
+
+print(student)
+#set default
+student ={
+"name":"Bhargavi"
+}
+
+student.setdefault("age",21)
+print(student)
+
+student.clear()
+print(student)
+
+student={
+"name":"bhargvi",
+"age":21
+}
+new_student =student.copy()
+print(new_student)
+
